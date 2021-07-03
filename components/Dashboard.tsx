@@ -6,6 +6,7 @@ import { AccountInfo } from "../components/AccountInfo";
 import { GenericInput } from "../components/GenericInput";
 import { StorageInfo } from "../components/StorageInfo";
 import { BalanceInfo } from "../components/BalanceInfo";
+import { Transfer } from "../components/Transfer";
 import { AtSignIcon } from "@chakra-ui/icons";
 import { validateContractAddress } from "../utils/utils";
 
@@ -66,6 +67,11 @@ export function Dashboard() {
           />
           <StorageInfo contractAddress={contractAddress} />
           <BalanceInfo
+            contractAddress={contractAddress}
+            tokenId={tokenId}
+            pkh={pkh!}
+          />
+          <Transfer
             contractAddress={contractAddress}
             tokenId={tokenId}
             pkh={pkh!}
