@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { ChakraProvider, Box, VStack, Grid, theme } from "@chakra-ui/react";
+import { ChakraProvider, VStack, theme } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "../components/ColorModeSwitcher";
 import { Logo } from "../components/Logo";
 import { DAppProvider } from "../hooks/useDApp";
 import { Layout } from "../components/Layout";
+import { Dashboard } from "../components/Dashboard";
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
             <ColorModeSwitcher justifySelf="flex-end" />
             <VStack spacing={8}>
               <Logo w={100} h={100} />
+              <Dashboard />
             </VStack>
           </Layout>
         </ChakraProvider>
