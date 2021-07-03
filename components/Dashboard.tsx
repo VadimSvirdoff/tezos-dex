@@ -5,6 +5,7 @@ import { useReady, useConnect, useAccountPkh } from "../hooks/useDApp";
 import { AccountInfo } from "../components/AccountInfo";
 import { GenericInput } from "../components/GenericInput";
 import { StorageInfo } from "../components/StorageInfo";
+import { BalanceInfo } from "../components/BalanceInfo";
 import { AtSignIcon } from "@chakra-ui/icons";
 import { validateContractAddress } from "../utils/utils";
 
@@ -64,6 +65,11 @@ export function Dashboard() {
             title="Token ID"
           />
           <StorageInfo contractAddress={contractAddress} />
+          <BalanceInfo
+            contractAddress={contractAddress}
+            tokenId={tokenId}
+            pkh={pkh!}
+          />
         </>
       )}
     </VStack>
