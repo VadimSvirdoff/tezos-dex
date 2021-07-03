@@ -3,6 +3,9 @@ import { Button, Divider, VStack } from "@chakra-ui/react";
 
 import { useReady, useConnect, useAccountPkh } from "../hooks/useDApp";
 import { AccountInfo } from "../components/AccountInfo";
+import { GenericInput } from "../components/GenericInput";
+import { AtSignIcon } from "@chakra-ui/icons";
+import { validateContractAddress } from "../utils/utils";
 
 
 const DEFAULT_CONTRACT_ADDRESS = "KT1R2DVgCq978oc3B39yFA9YNq6K4PYQeKXg";
@@ -41,7 +44,24 @@ export function Dashboard() {
       ) : (
         <>
           <AccountInfo account={pkh!} handleReconnect={handleConnect} />
-          
+          <Divider />
+          <GenericInput
+            icon={<AtSignIcon w="4" h="4" />}
+            inputProps={{
+              isInvalid: !validateContractAddress(contractAddress),
+              value: contractAddress,
+              onChange: (e) => setContractAddress(e.target.value),
+            }}
+            title="Contract address"
+          />
+          <GenericInput
+            icon={<AtSignIcon w="4" h="4" />}
+            inputProps={{
+              value: tokenId,
+              onChange: (e) => setTokenId(e.target.value),
+            }}
+            title="Token ID"
+          />
         </>
       )}
     </VStack>
