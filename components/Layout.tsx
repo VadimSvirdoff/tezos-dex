@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/layout.module.css'
 import React from 'react'
 import { ChakraProvider, Box, VStack, Grid, theme } from "@chakra-ui/react";
 
