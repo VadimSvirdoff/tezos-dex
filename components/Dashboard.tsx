@@ -4,6 +4,7 @@ import { Button, Divider, VStack } from "@chakra-ui/react";
 import { useReady, useConnect, useAccountPkh } from "../hooks/useDApp";
 import { AccountInfo } from "../components/AccountInfo";
 import { GenericInput } from "../components/GenericInput";
+import { StorageInfo } from "../components/StorageInfo";
 import { AtSignIcon } from "@chakra-ui/icons";
 import { validateContractAddress } from "../utils/utils";
 
@@ -62,6 +63,7 @@ export function Dashboard() {
             }}
             title="Token ID"
           />
+          <StorageInfo contractAddress={contractAddress} />
         </>
       )}
     </VStack>
