@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import { ChakraProvider, Box, VStack, Grid, theme } from "@chakra-ui/react";
+import { Box, Grid } from "@chakra-ui/react";
 
 
 const name = 'Vadym Svyrydov'
@@ -27,7 +27,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <Box fontSize="xl">
         <Grid minH="100vh" p={3}>
           {children}
-
         </Grid>
       </Box>
     </div>
