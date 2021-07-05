@@ -1,7 +1,7 @@
 import { Box, Input, Text } from "@chakra-ui/react";
 import React, { useCallback } from "react";
-import { useTezos } from "../hooks/useDApp";
-import { usePendingPromise } from "../hooks/usePendingPromise";
+import { useTezos } from "hooks/useDApp";
+import { usePendingPromise } from "hooks/usePendingPromise";
 import { Preloader } from "./Preloader";
 
 

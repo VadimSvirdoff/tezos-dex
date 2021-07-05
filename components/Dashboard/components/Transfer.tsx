@@ -1,6 +1,6 @@
 import { Text, Box, Input, InputGroup, InputRightElement, Button } from "@chakra-ui/react";
 import React, { useCallback, useState } from "react";
-import { useTezos } from "../hooks/useDApp";
+import { useTezos } from "hooks/useDApp";
 import { Preloader } from "./Preloader";
 
 function prepareTransferParams(

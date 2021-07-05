@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Button, Divider, VStack } from "@chakra-ui/react";
 
-import { useReady, useConnect, useAccountPkh } from "../hooks/useDApp";
-import { AccountInfo } from "../components/AccountInfo";
-import { GenericInput } from "../components/GenericInput";
-import { StorageInfo } from "../components/StorageInfo";
-import { BalanceInfo } from "../components/BalanceInfo";
-import { Transfer } from "../components/Transfer";
+import { useReady, useConnect, useAccountPkh } from "../../hooks/useDApp";
+import { AccountInfo } from "./components/AccountInfo";
+import { GenericInput } from "./components/GenericInput";
+import { StorageInfo } from "./components/StorageInfo";
+import { BalanceInfo } from "./components/BalanceInfo";
+import { Transfer } from "./components/Transfer";
 import { AtSignIcon } from "@chakra-ui/icons";
-import { validateContractAddress } from "../utils/utils";
+import { validateContractAddress } from "../../utils/utils";
 
 
 const DEFAULT_CONTRACT_ADDRESS = "KT1R2DVgCq978oc3B39yFA9YNq6K4PYQeKXg";
