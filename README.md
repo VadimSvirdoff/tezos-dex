@@ -35,11 +35,11 @@ yarn dev
 - switch Tezos mainnet to Edo2 Testnet (left to your avatar)
 
 ### 5) Get tezos in Edo2 testnet 
-    1) go to [faucet](https://faucet.tzalpha.net/) and copy JSON
-    2) press to your avatar 
-    3) import account 
-    4) faucet file
-    5) insert JSON to faucet JSON
-    6) press submit
+- go to [faucet](https://faucet.tzalpha.net/) and copy JSON
+- press to your avatar 
+- import account 
+- faucet file
+- insert JSON to faucet JSON
+- press submit
 
-### 3) Have a fun 😊😊😊
+### 6) Have a fun 😊😊😊
