@@ -2,7 +2,7 @@
 
 ## ▶️ Live example
 
-dApp here [-> link <-](https://tezos-fa2-defi.vercel.app/) 
+You can find dApplciation using this [-> link <-](https://tezos-fa2-defi.vercel.app/) 
 
 ## 🚀 Quick Start
 
