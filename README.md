@@ -29,4 +29,17 @@ yarn
 yarn dev
 ```
 
+## 4) Prepare your temple wallet
+- [install](https://templewallet.com/download)
+- [signup](https://www.youtube.com/watch?v=S8_tL8PfCts&ab_channel=MadFish.solutions) 
+- switch Tezos mainnet -> Edo2 Testnet (left to your avatar)
+
+## 5) Get tezos in Edo2 testnet 
+    - go to [faucet](https://faucet.tzalpha.net/) and copy JSON
+    - press to your avatar 
+    - import account 
+    - faucet file
+    - insert JSON to faucet JSON
+    - press submit
+
 ### 3) Have a fun 😊😊😊
